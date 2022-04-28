@@ -1,0 +1,269 @@
+:root {
+  --font-family-principal: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-color: rgb(0, 1, 0);
+  --header-background-color: rgb(240, 228, 130);
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-family-principal);
+  color: var(--font-color);
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--header-background-color);
+  margin-bottom: 30px;
+}
+
+.nav-header {
+  z-index: 500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--header-background-color);
+  transition: background-color 0.7s linear 0.2s;
+}
+
+.scroll {
+  background-color: #fff;
+  box-shadow: 0 15px 20px rgba(223, 245, 255, 0.877);
+  transition: background-color 0.7s linear 0.2s;
+}
+
+.contenedor-nav-header {
+  height: 90px;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedor-logo-header {
+  display: flex;
+  align-items: center;
+}
+
+.contenedor-logo-header a {
+  display: flex;
+  align-items: center;
+  color: var(--font-color);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.logo-header {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.logo-header img {
+  height: 50px;
+  width: 50px;
+}
+
+.items-nav-header {
+  width: 30%;
+  min-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.items-nav-header li {
+  list-style: none;
+}
+
+.items-nav-header li a {
+  color: var(--font-color);
+  font-weight: bolder;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.items-nav-header li a:hover {
+  color: rgb(92, 91, 91);
+  transition: all 0.3s;
+}
+
+.panel-btn {
+  display: none;
+}
+
+/* @media (max-width: 820px) {
+  .container-cards {
+    justify-content: center;
+  }
+} */
+
+@media (max-width: 770px) {
+  .items-nav-header {
+    display: none;
+  }
+
+  .panel-btn {
+    display: block;
+  }
+}
+
+/* @media (max-width: 600px) {
+  .container-cards {
+    margin-top: 10vh;
+    margin-bottom: 0;
+  }
+} */
+
+.contenedor-portada-header {
+  margin-top: 90px;
+  width: 85%;
+  display: flex;
+  padding-bottom: 5px;
+}
+
+.contenedor-portada-pikachu {
+  width: 40%;
+  min-width: 250px;
+  margin-left: 10%;
+}
+
+.contenedor-portada-texto {
+  text-align: center;
+  width: 40%;
+}
+
+.portada-texto h1 {
+  font-size: 45px;
+}
+
+.portada-texto button {
+  font-weight: bolder;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(to top right, rgb(0, 173, 235), rgb(3, 204, 169));
+  padding: 15px 40px;
+  border-radius: 30px;
+  border-style: none;
+  cursor: pointer;
+}
+
+main h2 {
+  margin-top: 0;
+  font-size: 40px;
+}
+
+.contenedor-historia-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.articulos-historia {
+  width: 81%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.contenedor-logo-historia {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  border-left: 5px solid rgb(13, 226, 148);
+  font-size: 35px;
+  font-weight: bolder;
+  color: rgb(13, 226, 148);
+}
+
+.contenedor-logo-historia img {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.contenedor-texto-historia h3 {
+  margin-top: 0;
+  font-size: 25px;
+}
+
+.contenedor-texto-historia p {
+  line-height: 35px;
+  font-weight: bolder;
+  color: gray;
+  font-size: 17px;
+}
+
+#articulo-historia-1 h3 {
+  color: rgb(13, 226, 148);
+}
+
+#articulo-historia-2 .contenedor-logo-historia {
+  color: rgb(234, 53, 87);
+  border-left: none;
+  border-right: 5px solid rgb(234, 53, 87);
+}
+
+#articulo-historia-2 h3 {
+  color: rgb(234, 53, 87);
+}
+
+#articulo-historia-3 .contenedor-logo-historia {
+  padding: 70px 50px;
+  color: rgb(255, 214, 62);
+  border-left: 5px solid rgb(255, 214, 62);
+}
+
+#articulo-historia-3 h3 {
+  color: rgb(255, 214, 62);
+}
+
+#videos-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#videos-main iframe {
+  margin-bottom: 20px;
+}
+
+.div-footer {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(
+    to top,
+    rgb(0, 173, 235),
+    rgba(255, 255, 255, 0.9)
+  );
+}
+.div-footer p {
+  color: rgb(234, 53, 87);
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
